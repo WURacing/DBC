@@ -1,0 +1,1 @@
+hsk-libs/scripts/dbc2c.awk

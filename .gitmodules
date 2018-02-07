@@ -1,0 +1,3 @@
+[submodule "hsk-libs"]
+	path = hsk-libs
+	url = https://github.com/lonkamikaze/hsk-libs.git

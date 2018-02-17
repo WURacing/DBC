@@ -37,10 +37,9 @@ BU_: AEM_EMS_4 REAR_CAN_CONTROLLER
 
 
 BO_ 2180030468 RearAnalog0: 8 REAR_CAN_CONTROLLER
- SG_ RearRightShockPot : 0|10@1+ (0.07356, -75.25) [-75.25 | 0.07544] "distance:mm" Vector_XXX
- SG_ RearLeftShockPot : 10|10@1+ (0.07458, -76.3) [-76.3 | -0.00466] "distance:mm" Vector_XXX
- 
-
+ SG_ RearRightShockPot : 0|10@1+ (0.07356,-75.25) [-75.25|0.07544] "distance:mm" Vector__XXX
+ SG_ RearLeftShockPot : 10|10@1+ (0.07458,-76.3) [-76.3|-0.00466] "distance:mm" Vector__XXX
+ SG_ RearBrakePressure : 20|10@1+ (6.106,-621.63) [-621.63|5624.808] "pressure:psi" Vector__XXX 
 
 BO_ 2180030467 AEMEngine3: 8 AEM_EMS_4
  SG_ ECUBatteryVoltage : 55|16@0+ (0.0002455,0) [0|16.089] "voltage:V" Vector__XXX
@@ -65,8 +64,6 @@ BO_ 2180030464 AEMEngine0: 8 AEM_EMS_4
  SG_ ThrottlePos : 39|16@0+ (0.0015259,0) [0|99.9998565] "fraction:%" Vector__XXX
  SG_ EngineLoad : 23|16@0+ (0.0015259,0) [0|0] "fraction:%" Vector__XXX
  SG_ EngineSpeed : 7|16@0+ (0.39063,0) [0|25599.94] "angular_speed:rpm" Vector__XXX
-
-
 
 BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
 BA_DEF_ BO_  "GenMsgSendType" STRING ;
@@ -103,4 +100,3 @@ BA_ "BusType" "CAN";
 BA_ "GenMsgCycleTime" BO_ 2180030466 16;
 BA_ "GenMsgCycleTime" BO_ 2180030465 16;
 BA_ "GenMsgCycleTime" BO_ 2180030464 16;
-

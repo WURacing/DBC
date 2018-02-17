@@ -33,7 +33,13 @@ NS_ :
 
 BS_:
 
-BU_: AEM_EMS_4
+BU_: AEM_EMS_4 REAR_CAN_CONTROLLER
+
+
+BO_ 2180030468 RearAnalog0: 8 REAR_CAN_CONTROLLER
+ SG_ RearRightShockPot : 0|10@1+ (0.07356, -75.25) [-75.25 | 0.07544] "distance:mm" Vector_XXX
+ SG_ RearLeftShockPot : 10|10@1+ (0.07458, -76.3) [-76.3 | -0.00466] "distance:mm" Vector_XXX
+ 
 
 
 BO_ 2180030467 AEMEngine3: 8 AEM_EMS_4

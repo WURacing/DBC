@@ -10,5 +10,7 @@ cd "$1"
 export TEMPLATES=../templates.dbc2c
 
 for i in *.dbc; do
-	cat "$i" | iconv -f CP1252 | mawk -f ../dbc2c.awk > "${i%.dbc}".h
+	echo "#define ubyte uint8_t" > "${i%.dbc}".h
+	echo "#define uword uint16_t" >> "${i%.dbc}".h
+	cat "$i" | iconv -f CP1252 | mawk -f ../dbc2c.awk >> "${i%.dbc}".h
 done

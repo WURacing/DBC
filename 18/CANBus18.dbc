@@ -33,13 +33,29 @@ NS_ :
 
 BS_:
 
-BU_: AEM_EMS_4 REAR_CAN_CONTROLLER
+BU_: AEM_EMS_4 RIGHT_CAN_CONTROLLER LEFT_CAN_CONTROLLER SIDEPOD_CAN_CONTROLLER
 
+BO_ 2180030460 SidepodController0: 8 SIDEPOD_CAN_CONTROLLER
+ SG_ InnerManifoldPressure : 0|10@1+ (1,0) [0|1023] "pressure:adc" Vector__XXX
+ SG_ CGAcc1 : 10|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGAcc2 : 20|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGAcc3 : 30|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
 
+BO_ 2180030461 LeftController1: 8 LEFT_CAN_CONTROLLER
+ SG_ WheelAccX : 0|14@1- (0.009576,0) [-80|80] "acceleration:m/s^2" Vector__XXX
+ SG_ WheelAccY : 14|14@1- (0.009576,0) [-80|80] "acceleration:m/s^2" Vector__XXX
+ SG_ WheelAccZ : 28|14@1- (-0.009576,0) [-80|80] "acceleration:m/s^2" Vector__XXX
 
-BO_ 2180030463 RearController0: 8 REAR_CAN_CONTROLLER
- SG_ RearBrakePressure : 0|10@1+ (4.8847,3) [3|5000] "pressure:psi"
- SG_ FrontBrakePressure : 10|10@1+ (4.8847,3) [3|5000] "pressure:psi" Vector__XXX 
+BO_ 2180030462 LeftController0: 8 LEFT_CAN_CONTROLLER
+ SG_ RadiatorTopTemp : 0|10@1+ (-0.6468863,380.4853) [-58|302] "temperature:degF"
+ SG_ RadiatorBottomTemp : 10|10@1+ (-0.6468863,380.4853) [-58|302] "temperature:degF" Vector__XXX
+
+BO_ 2180030463 RightController0: 8 RIGHT_CAN_CONTROLLER
+ SG_ RearBrakePressure : 0|10@1+ (0.97694,0) [0|1000] "pressure:psi"
+ SG_ FrontBrakePressure : 10|10@1+ (0.97694,0) [0|1000] "pressure:psi" Vector__XXX
+ SG_ CGAcc1 : 20|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGAcc2 : 30|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGAcc3 : 40|10@1+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
 
 BO_ 2180030467 AEMEngine3: 8 AEM_EMS_4
  SG_ ECUBatteryVoltage : 55|16@0+ (0.0002455,0) [0|16.089] "voltage:V" Vector__XXX
@@ -63,6 +79,7 @@ BO_ 2180030464 AEMEngine0: 8 AEM_EMS_4
  SG_ IntakeManifoldAirTemp : 55|8@0- (1.8,32) [-198.4|260.6] "temperature:F" Vector__XXX
  SG_ ThrottlePos : 39|16@0+ (0.0015259,0) [0|99.9998565] "fraction:%" Vector__XXX
  SG_ EngineLoad : 23|16@0+ (0.0015259,0) [0|0] "fraction:%" Vector__XXX
+ SG_ MAP : 23|16@0+ (0.0015461,0) [0|0] "pressure:kPa" Vector__XXX
  SG_ EngineSpeed : 7|16@0+ (0.39063,0) [0|25599.94] "angular_speed:rpm" Vector__XXX
 
 BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;

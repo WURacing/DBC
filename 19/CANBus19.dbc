@@ -36,11 +36,11 @@ BS_:
 BU_: AEM_EMS_4 DATALOGGER
 
 BO_ 2180030468 DataLogger0: 8 DATALOGGER
- SG_ RadiatorHallCounts : 7|16@0+ (1.0,0) [0|65535] "unitless:" Vector_XXX
- SG_ VehicleDynamics1 : 23|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
- SG_ VehicleDynamics2 : 29|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
- SG_ VehicleDynamics3 : 35|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
- SG_ VehicleDynamics4 : 41|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
+ SG_ RadiatorHallCounts : 7|16@0+ (1.8181818,0) [0|119154.545455] "flow:L/min" Vector_XXX
+ SG_ CGAccelRawY : 23|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGGyroscope : 29|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s" Vector_XXX
+ SG_ CGAccelRawZ : 35|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
+ SG_ CGAccelRawX : 41|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
 
 BO_ 2180030467 AEMEngine3: 8 AEM_EMS_4
  SG_ ECUBatteryVoltage : 55|16@0+ (0.0002455,0) [0|16.089] "voltage:V" Vector__XXX

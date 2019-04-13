@@ -1,0 +1,108 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: AEM_EMS_4 DATALOGGER
+
+BO_ 2180030468 DataLogger0: 8 DATALOGGER
+ SG_ RadiatorHallCounts : 7|16@0+ (1.0,0) [0|65535] "unitless:" Vector_XXX
+ SG_ VehicleDynamics1 : 23|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
+ SG_ VehicleDynamics2 : 29|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
+ SG_ VehicleDynamics3 : 35|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
+ SG_ VehicleDynamics4 : 41|10@0+ (1.0,0) [0|1023] "unitless:" Vector_XXX
+
+BO_ 2180030467 AEMEngine3: 8 AEM_EMS_4
+ SG_ ECUBatteryVoltage : 55|16@0+ (0.0002455,0) [0|16.089] "voltage:V" Vector__XXX
+ SG_ IgnitionTiming : 47|8@0+ (0.35156,-17) [-17|72.65] "angle:deg" Vector__XXX
+ SG_ GearPosCalculated : 39|8@0+ (1,0) [0|255] "unitless:" Vector__XXX
+ SG_ VehicleSpeed : 23|16@0+ (0.00390625,0) [0|255.99609375] "speed:mph" Vector__XXX
+ SG_ AFR1 : 7|8@0+ (0.057227,7.325) [7.325|21.917885] "afr:AFR Gasoline" Vector__XXX
+
+BO_ 2180030466 AEMEngine2: 8 AEM_EMS_4
+ SG_ ECUBatteryVoltage : 55|16@0+ (0.000326,0) [0|21.36441] "voltage:V" Vector__XXX
+ SG_ RestrictorPressure : 39|16@0+ (1.57702E-003,0) [0|101.325] "pressure:kPa" Vector__XXX
+ SG_ ECU_GPIO6_Voltage : 23|16@0+ (7.782E-005,0) [0|5.0999] "voltage:V" Vector__XXX
+ SG_ ECU_GPIO3_Voltage : 7|16@0+ (7.782E-005,0) [0|5.0999] "voltage:V" Vector__XXX
+
+BO_ 2180030465 AEMEngine1: 8 AEM_EMS_4
+ SG_ ECU_GPIO1_Voltage : 55|16@0+ (7.782E-005,0) [0|5.0999] "voltage:V" Vector__XXX
+ SG_ RadiatorBottomTemp : 39|16@0+ (-1.02997E-002,380.485294) [-58|302] "temperature:F" Vector__XXX
+ SG_ RadiatorTopTemp : 23|16@0+ (-1.02997E-002,380.485294) [-58|302] "temperature:F" Vector__XXX
+ SG_ ECU_GPIO2_Voltage : 7|16@0+ (7.782E-005,0) [0|5.0999] "voltage:V" Vector__XXX
+
+BO_ 2180030464 AEMEngine0: 8 AEM_EMS_4
+ SG_ CoolantTemp : 63|8@0- (1.8,32) [-198.4|260.6] "temperature:F" Vector__XXX
+ SG_ IntakeManifoldAirTemp : 55|8@0- (1.8,32) [-198.4|260.6] "temperature:F" Vector__XXX
+ SG_ ThrottlePos : 39|16@0+ (0.0015259,0) [0|99.9998565] "fraction:%" Vector__XXX
+ SG_ EngineLoad : 23|16@0+ (0.0015259,0) [0|99.998565] "fraction:%" Vector__XXX
+ SG_ EngineSpeed : 7|16@0+ (0.39063,0) [0|25599.94] "angular_speed:rpm" Vector__XXX
+
+
+
+BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" STRING ;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 1 10000;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_  "VersionNumber" INT 0 10000;
+BA_DEF_  "VersionDay" INT 1 31;
+BA_DEF_  "VersionMonth" INT 1 12;
+BA_DEF_  "VersionYear" INT 2016 3000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "DBC_Author_Contact" STRING ;
+BA_DEF_DEF_  "DBC_Author_Contact" "CANbusInfo@AEMelectronics.com";
+BA_DEF_DEF_  "TpNodeBaseAddress" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "ProtocolType" "";
+BA_DEF_DEF_  "NmType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 20;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "VersionDay" 1;
+BA_DEF_DEF_  "VersionMonth" 1;
+BA_DEF_DEF_  "VersionYear" 2016;
+BA_DEF_DEF_  "BusType" "Can";
+BA_ "ProtocolType" "AEM Net";
+BA_ "NmType" "AEM Net";
+BA_ "VersionNumber" 3;
+BA_ "VersionDay" 28;
+BA_ "VersionMonth" 11;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 2180030466 16;
+BA_ "GenMsgCycleTime" BO_ 2180030465 16;
+BA_ "GenMsgCycleTime" BO_ 2180030464 16;
+

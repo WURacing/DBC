@@ -33,12 +33,16 @@ NS_ :
 
 BS_:
 
-BU_: AEM_EMS_4 DATALOGGER
+BU_: AEM_EMS_4 DATALOGGER DATALOGGER_2
+
+BO_ 2180030469 DataLogger1: 8 DATALOGGER_2
+ SG_ WheelCounts1 : 7|16@0+ (1.0,0) [0|65535] "unitless:" Vector_XXX
+ SG_ WheelCounts2 : 23|16@0+ (1.0,0) [0|65535] "unitless:" Vector_XXX
 
 BO_ 2180030468 DataLogger0: 8 DATALOGGER
- SG_ RadiatorHallCounts : 7|16@0+ (1.8181818,0) [0|119154.545455] "flow:L/min" Vector_XXX
+ SG_ RadiatorFlow : 7|16@0+ (1.8181818,0) [0|119154.545455] "flow:L/min" Vector_XXX
  SG_ CGAccelRawY : 23|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
- SG_ CGGyroscope : 29|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s" Vector_XXX
+ SG_ CGGyroscope : 29|10@0+ (0.12201,-63.1553) [-50|50] "rotation:deg/s" Vector_XXX
  SG_ CGAccelRawZ : 35|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
  SG_ CGAccelRawX : 41|10@0+ (0.012219,-6.215) [-5|5] "acceleration:G" Vector__XXX
 

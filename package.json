@@ -1,0 +1,25 @@
+{
+  "name": "@wuracing/dbc",
+  "version": "2019.1.0",
+  "description": "WURacing DBC files",
+  "main": "index.js",
+  "files": [
+	  "dbc/*.dbc",
+	  "index.js",
+	  "README.md",
+	  "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WURacing/DBC.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WURacing/DBC/issues"
+  },
+  "homepage": "https://github.com/WURacing/DBC#readme"
+}

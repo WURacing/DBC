@@ -1,6 +1,6 @@
 {
   "name": "@wuracing/dbc",
-  "version": "2019.2.0",
+  "version": "2019.2.1",
   "description": "WURacing DBC files",
   "main": "index.js",
   "files": [

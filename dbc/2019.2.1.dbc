@@ -48,7 +48,7 @@ BO_ 2180030471 DataLoggerBoard2: 8 DATALOGGER_19
  SG_ WheelSpeed2 : 13|10@0+ (1.0,0) [0|1023] "angular_speed:rpm" Vector__XXX
 
 BO_ 2180030472 DataLoggerBoard3: 8 DATALOGGER_19
- SG_ Pitot : 19|10@0+ (0.01527370479,-7.6368523949) [0|12.5] "pressure:mbar" Vector_XXX
+ SG_ Pitot : 19|10@0+ (0.01527370479,-1.5625) [0|12.5] "pressure:mbar" Vector_XXX
  SG_ AirFilterPressure : 25|10@0+ (1.57702E-003,0) [0|101.325] "pressure:kPa" Vector__XXX
  SG_ FrontRightBrakeTemp : 47|10@0+ (0.977517,-97.7517) [0|800] "temperature:C" Vector__XXX
 

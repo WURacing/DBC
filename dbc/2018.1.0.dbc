@@ -33,15 +33,16 @@ NS_ :
 
 BS_:
 
-BU_: AEM_EMS_4 RIGHT_CAN_CONTROLLER LEFT_CAN_CONTROLLER
+BU_: AEM_EMS_4 RIGHT_CAN_CONTROLLER LEFT_CAN_CONTROLLER Vector_XXX
+
 
 BO_ 2180030462 LeftController0: 8 LEFT_CAN_CONTROLLER
- SG_ RadiatorTopTemp : 0|10@1+ (-0.6468863,380.4853) [-58|302] "temperature:degF" Vector_XXX
+ SG_ RadiatorTopTemp : 0|10@1+ (-0.6468863,380.4853) [-58|302] "temperature:degF"  Vector_XXX
  SG_ RadiatorBottomTemp : 10|10@1+ (-0.6468863,380.4853) [-58|302] "temperature:degF" Vector__XXX
- SG_ CGGyroscope : 20|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s" Vector_XXX
- SG_ FrontGyroscope : 30|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s" Vector_XXX
- SG_ LeftDamperTravel : 40|10@1+ (0.048876,0) [0|50] "distance:mm" Vector_XXX
- SG_ RightDamperTravel : 50|10@1+ (0.048876,0) [0|50] "distance:mm" Vector_XXX 
+ SG_ CGGyroscope : 20|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s"  Vector_XXX
+ SG_ FrontGyroscope : 30|10@1+ (0.12201,-63.1553) [-50|50] "rotation:deg/s"  Vector_XXX
+ SG_ LeftDamperTravel : 40|10@1+ (0.048876,0) [0|50] "distance:mm"  Vector_XXX
+ SG_ RightDamperTravel : 50|10@1+ (0.048876,0) [0|50] "distance:mm"  Vector_XXX
 
 BO_ 2180030463 RightController0: 8 RIGHT_CAN_CONTROLLER
  SG_ RearBrakePressure : 0|10@1+ (0.97694,0) [0|1000] "pressure:psi" Vector__XXX
@@ -75,6 +76,8 @@ BO_ 2180030464 AEMEngine0: 8 AEM_EMS_4
  SG_ EngineLoad : 23|16@0+ (0.0015259,0) [0|0] "fraction:%" Vector__XXX
  SG_ EngineSpeed : 7|16@0+ (0.39063,0) [0|25599.94] "angular_speed:rpm" Vector__XXX
 
+
+
 BA_DEF_ BU_  "TpNodeBaseAddress" HEX 0 65535;
 BA_DEF_ BO_  "GenMsgSendType" STRING ;
 BA_DEF_  "ProtocolType" STRING ;
@@ -88,7 +91,6 @@ BA_DEF_  "VersionMonth" INT 1 12;
 BA_DEF_  "VersionYear" INT 2016 3000;
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BO_  "DBC_Author_Contact" STRING ;
-BA_DEF_DEF_  "DBC_Author_Contact" "CANbusInfo@AEMelectronics.com";
 BA_DEF_DEF_  "TpNodeBaseAddress" 0;
 BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
 BA_DEF_DEF_  "ProtocolType" "";
@@ -101,12 +103,14 @@ BA_DEF_DEF_  "VersionDay" 1;
 BA_DEF_DEF_  "VersionMonth" 1;
 BA_DEF_DEF_  "VersionYear" 2016;
 BA_DEF_DEF_  "BusType" "Can";
-BA_ "ProtocolType" "AEM Net";
-BA_ "NmType" "AEM Net";
-BA_ "VersionNumber" 3;
-BA_ "VersionDay" 28;
-BA_ "VersionMonth" 11;
+BA_DEF_DEF_  "DBC_Author_Contact" "CANbusInfo@AEMelectronics.com";
 BA_ "BusType" "CAN";
+BA_ "VersionMonth" 11;
+BA_ "VersionDay" 28;
+BA_ "VersionNumber" 3;
+BA_ "NmType" "AEM Net";
+BA_ "ProtocolType" "AEM Net";
 BA_ "GenMsgCycleTime" BO_ 2180030466 16;
 BA_ "GenMsgCycleTime" BO_ 2180030465 16;
 BA_ "GenMsgCycleTime" BO_ 2180030464 16;
+
